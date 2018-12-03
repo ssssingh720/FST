@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/play_screen_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
+                android:src="@drawable/back_btn" />
+
+            <com.fst.customViews.TextViewCalibriBold
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.fst.customViews.TextViewCalibriBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="WP: "
+                                android:gravity="center"
+                                android:textColor="@color/loading_view_top_color"
+                                android:textSize="20sp" />
+
+                            <com.fst.customViews.TextViewCalibriBold
+                                android:id="@+id/txtReservePoints"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="@color/loading_view_top_color"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <com.fst.customViews.TextViewCalibriBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Bid Modify"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="30sp" />
+
+                            <com.fst.customViews.TextViewCalibriBold
+                                android:id="@+id/txtBidId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="(Bid no. )"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.fst.customViews.TextViewCalibriBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="FP: "
+                                android:gravity="center"
+                                android:textColor="@color/active_points"
+                                android:textSize="20sp" />
+
+                            <com.fst.customViews.TextViewCalibriBold
+                                android:id="@+id/txtPlayPoints"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="0"
+                                android:gravity="center"
+                                android:textColor="@color/active_points"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.fst.customViews.TextViewCalibriBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:text="EVENTS"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="25sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:background="@drawable/play_dialog_bg">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rclEvents"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="25dp"
+                                android:paddingTop="15dp"
+                                android:paddingRight="25dp"
+                                android:layout_centerInParent="true"
+                                android:paddingBottom="15dp"
+                                tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                                tools:listitem="@layout/events_adapter"
+                                tools:orientation="horizontal" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/imgEventLeftScroll"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/btn_left_selector"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true" />
+
+                        <ImageView
+                            android:id="@+id/imgEventRightScroll"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/btn_right_selector"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/lnrCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.fst.customViews.TextViewCalibriBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:gravity="center"
+                                    android:text="BID CATEGORY"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="25sp" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@drawable/play_dialog_bg"
+                                    android:gravity="center|top"
+                                    android:padding="15dp">
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/rctBid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                                        tools:listitem="@layout/bid_adapter"
+                                        tools:orientation="horizontal" />
+
+                                    <LinearLayout
+                                        android:id="@+id/lnrChoice"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/rctBid"
+                                        android:layout_alignParentBottom="true"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center|left"
+                                            android:text="CHOICE"
+                                            android:textColor="@color/loading_view_right_color"
+                                            android:textSize="18sp" />
+
+                                        <me.grantland.widget.AutofitTextView
+                                            android:id="@+id/txtChoice"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:autoSizeMaxTextSize="18sp"
+                                            android:autoSizeMinTextSize="14sp"
+                                            android:background="@color/colorAccent"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:padding="5dp"
+                                            android:paddingLeft="30dp"
+                                            android:paddingTop="10dp"
+                                            android:paddingRight="30dp"
+                                            android:paddingBottom="10dp"
+                                            android:textColor="@color/white"
+                                            android:textSize="20sp"
+                                            android:textStyle="bold" />
+
+                                        <!--<ImageView-->
+                                        <!--android:layout_width="50dp"-->
+                                        <!--android:layout_height="50dp"-->
+                                        <!--android:layout_gravity="center|left"-->
+                                        <!--android:adjustViewBounds="true"-->
+                                        <!--android:src="@drawable/star"-->
+                                        <!--android:textSize="25sp"-->
+                                        <!--android:visibility="gone" />-->
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:id="@+id/imgBidLeftScroll"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/btn_left_selector"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true" />
+
+                                <ImageView
+                                    android:id="@+id/imgBidRightScroll"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/btn_right_selector"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true" />
+
+
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center|left"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <com.fst.customViews.TextViewCalibriBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center|left"
+                                    android:text="POINTS"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="25sp" />
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rclPoints"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                                    tools:listitem="@layout/points_adapter"
+                                    tools:orientation="horizontal" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                            <com.fst.customViews.TextViewCalibriBold
+                                android:id="@+id/txtDeleteBid"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/button_submit"
+                                android:gravity="center"
+                                android:text="Delete Bid"
+                                android:textColor="@drawable/black_text_selector"
+                                android:textSize="25sp" />
+
+                                <com.fst.customViews.TextViewCalibriBold
+                                    android:id="@+id/txtSubmit"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="10dp"
+                                    android:background="@drawable/button_submit"
+                                    android:gravity="center"
+                                    android:text="Modify Bid"
+                                    android:textColor="@drawable/black_text_selector"
+                                    android:textSize="25sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imgOverlay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignTop="@+id/lnrCategory"
+                            android:layout_alignBottom="@+id/lnrCategory"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:background="@drawable/trans"
+                            android:scaleType="fitXY" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tblHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/white" />
+
+                    <com.fst.customViews.TextViewCalibriBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Today's Bid"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="25sp" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@color/black_overlay"
+                        android:orientation="horizontal">
+
+                        <TableRow android:background="@color/colorAccent">
+
+                            <!--<me.grantland.widget.AutofitTextView-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="7"-->
+                            <!--android:gravity="center"-->
+                            <!--android:maxLines="1"-->
+                            <!--android:text="S.N"-->
+                            <!--android:textColor="@color/loading_view_top_color"-->
+                            <!--android:textSize="18sp" />-->
+
+                            <me.grantland.widget.AutofitTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="20"
+                                android:autoSizeMaxTextSize="18sp"
+                                android:autoSizeMinTextSize="14sp"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:padding="5dp"
+                                android:text="BID DATE"
+                                android:textColor="@color/loading_view_top_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/trans" />
+
+                            <me.grantland.widget.AutofitTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="20"
+                                android:autoSizeMaxTextSize="18sp"
+                                android:autoSizeMinTextSize="14sp"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:padding="5dp"
+                                android:text="BID ID"
+                                android:textColor="@color/loading_view_top_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/trans" />
+
+                            <me.grantland.widget.AutofitTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="20"
+                                android:autoSizeMaxTextSize="18sp"
+                                android:autoSizeMinTextSize="14sp"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:padding="5dp"
+                                android:text="EVENTS"
+                                android:textColor="@color/loading_view_top_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/trans" />
+
+                            <!--<me.grantland.widget.AutofitTextView-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="20"-->
+                            <!--android:gravity="center"-->
+                            <!--android:maxLines="1"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:text="CATEGORY"-->
+                            <!--android:textColor="@color/loading_view_top_color"-->
+                            <!--android:textSize="18sp"-->
+                            <!--android:textStyle="bold" />-->
+
+                            <!--<View-->
+                            <!--android:layout_width="1dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@drawable/trans" />-->
+
+                            <me.grantland.widget.AutofitTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="20"
+                                android:autoSizeMaxTextSize="18sp"
+                                android:autoSizeMinTextSize="14sp"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:padding="5dp"
+                                android:text="CHOICE"
+                                android:textColor="@color/loading_view_top_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/trans" />
+
+                            <me.grantland.widget.AutofitTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="20"
+                                android:autoSizeMaxTextSize="18sp"
+                                android:autoSizeMinTextSize="14sp"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:padding="5dp"
+                                android:text="BID POINTS"
+                                android:textColor="@color/loading_view_top_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/rclBidReport"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--tools:layoutManager="android.support.v7.widget.LinearLayoutManager"-->
+                    <!--tools:listitem="@layout/bid_report_adapter"-->
+                    <!--tools:orientation="vertical" />-->
+
+                    <TableLayout
+                        android:id="@+id/tblBidReport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black_overlay"
+                        android:orientation="horizontal">
+
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--</LinearLayout>-->
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <io.saeid.fabloading.LoadingView
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:visibility="gone"
+        app:mfl_duration="500"
+        app:mfl_onclickLoading="false"
+        app:mfl_repeat="1000" />
+
+</RelativeLayout>

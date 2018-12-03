@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/funskytop"
+            android:icon="@drawable/musicicon"
+            android:title="FunSkyTop" />
+    </group>
+
+    <group
+        android:id="@+id/one"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/play_screen"
+            android:icon="@drawable/musicicon"
+            android:title="Play" />
+    </group>
+
+    <group
+        android:id="@+id/two"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/manage_points"
+            android:icon="@drawable/musicicon"
+            android:title="Manage Points" />
+    </group>
+
+    <group
+        android:id="@+id/three"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/live_draw"
+            android:icon="@drawable/musicicon"
+            android:title="Live Draw" />
+    </group>
+
+    <group
+        android:id="@+id/four"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/win_report"
+            android:icon="@drawable/musicicon"
+            android:title="Draw Report" />
+    </group>
+
+    <group
+        android:id="@+id/five"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/bid_report"
+            android:icon="@drawable/musicicon"
+            android:title="Bid Report" />
+    </group>
+
+    <group
+        android:id="@+id/six"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/accounts"
+            android:icon="@drawable/musicicon"
+            android:title="Accounts" />
+    </group>
+
+
+    <group
+        android:id="@+id/seven"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/musicicon"
+            android:title="Settings" />
+    </group>
+
+    <group
+        android:id="@+id/eight"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/how_to_play"
+            android:icon="@drawable/musicicon"
+            android:title="How To Play" />
+    </group>
+
+    <group
+        android:id="@+id/nine"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/advanced"
+            android:icon="@drawable/musicicon"
+            android:title="Advanced" />
+    </group>
+
+ <group
+        android:id="@+id/ten"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/share_app"
+            android:icon="@drawable/musicicon"
+            android:title="Share App" />
+    </group>
+
+    <group
+        android:id="@+id/logout"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout_menu"
+            android:icon="@drawable/musicicon"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

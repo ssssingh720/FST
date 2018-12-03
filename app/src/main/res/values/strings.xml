@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">FST</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="login_text">LOGIN</string>
+    <string name="password_hint">Password</string>
+    <string name="user_id_hint">User id</string>
+    <string name="submit_text">SUBMIT</string>
+
+    <string name="meta_position">meta_position</string>
+
+    <string name="meta_title">meta_title</string>
+
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+
+    <string name="no_internet_connection">Please check your internet connection.</string>
+    <string name="please_try_again">Please try after some time.</string>
+    <string name="terms_condition"><![CDATA[T&C]]></string>
+    <!--<string name="reg_terms_condition">I am above 18 years of age and I agree to the Terms and Conditions of this application</string>-->
+    <string name="reg_terms_condition">I agree to the Terms and Conditions of this application</string>
+    <string name="reg_terms_condition_desc">1. I am above 18 years of age.\n2. I abide by my country\'s laws pertaining to online gaming.\n3. I am signing up for fun and enjoyment.\n4. Decisions made by Funskytop will be final and binding on me.</string>
+
+    <string name="logout_msg">Do you want to logout?</string>
+
+    //fun sky top content
+    <string name="fun_sky_first_header">Welcome to FunSkyTop!  World’s 1st game of its kind.</string>
+    <string name="fun_sky_second_header">A unique concept.</string>
+    <string name="fun_sky_third_header">Multiple Categories to enjoy with Interesting multipliers!</string>
+
+    <string name="cra_one"><b>Example</b>:  If Draw Number :<b>76</b> ; Points :<b>10</b> points</string>
+    <string name="dr_one"><b>Example</b>:  If Draw Number :<b>52</b> ; Points :<b>10</b> points</string>
+    <string name="dr_zero"><b>Example</b>:  If Draw Number :<b>00</b> ; Points :<b>10</b> points</string>
+    <string name="t_twenty"><b>Example</b>:  If Draw Number :<b>91</b> ; Points :<b>10</b> points</string>
+
+    <string name="cra_two">"Win Points : 10x18=<b>180</b> points on Choice: <b><u>76</u></b></string>
+    <string name="dr_two">"Win Points : 10x8=<b>80</b> points on Choice <b>DR-7</b>  (07,16,25,34,43,<b>52</b>,61,70,79,88,97)</string>
+    <string name="dr_teo_zero">Win Points : 10x20=<b>200</b> points on Choice <b>DR-0</b>  (00)</string>
+    <string name="t_twenty_two">Win Points : 10x4=<b>40</b> points on Choice <b>T5</b>  (00)</string>
+
+
+    <string name="cra_three">"Win Points : 10x8=<b>80</b> points on Choices : 0<b><u>6</u></b>,1<b><u>6</u></b>,2<b><u>6</u></b>,3<b><u>6</u></b>,4<b><u>6</u></b>,5<b><u>6</u></b>,6<b><u>6</u></b>,8<b><u>6</u></b>,9<b><u>6</u></b></string>
+    <string name="t_twenty_three">"(81,82,83,84,85,86,87,88,89,90,<b>91</b>,92,93,94,95,96, 97 ,98,99,00)</string>
+    <string name="agree_tnc_text">I agree and confirm to below conditions</string>
+
+</resources>

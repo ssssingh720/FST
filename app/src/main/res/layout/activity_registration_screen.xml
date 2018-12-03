@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/login_text"
+            android:src="@drawable/fst_app_logo" />
+
+        <com.fst.customViews.TextViewCalibriBold
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:adjustViewBounds="true"
+            android:background="@drawable/header_bg"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/login_box_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <com.fst.customViews.EditTextRegularCalibri
+                    android:id="@+id/edtFName"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center|left"
+                    android:hint="User id"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:maxLength="12"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20sp" />
+
+                <com.fst.customViews.TextViewCalibriBold
+                    android:id="@+id/txtValidUSer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    android:textColor="@color/active_points"
+                    android:text=""/>
+
+
+
+                <com.fst.customViews.EditTextRegularCalibri
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center|left"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20sp" />
+
+                <com.fst.customViews.EditTextRegularCalibri
+                    android:id="@+id/edtConfirmPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center|left"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20sp" />
+
+                <!--<com.fst.customViews.EditTextRegularCalibri-->
+                    <!--android:id="@+id/edtMobileNo"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/edit_text_bg"-->
+                    <!--android:gravity="center|left"-->
+                    <!--android:hint="Mobile Number"-->
+                    <!--android:inputType="number"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:padding="15dp"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textColorHint="@color/white"-->
+                    <!--android:textSize="20sp" />-->
+
+                <!--<com.fst.customViews.EditTextRegularCalibri-->
+                    <!--android:id="@+id/edtDob"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/edit_text_bg"-->
+                    <!--android:clickable="true"-->
+                    <!--android:focusable="false"-->
+                    <!--android:focusableInTouchMode="false"-->
+                    <!--android:gravity="center|left"-->
+                    <!--android:hint="Date Of Birth"-->
+                    <!--android:inputType="date"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:padding="15dp"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textColorHint="@color/white"-->
+                    <!--android:textSize="20sp" />-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp">-->
+
+                    <!--<Spinner-->
+                        <!--android:id="@+id/spnGender"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="?attr/actionBarSize"-->
+                        <!--android:background="@drawable/button_bg"-->
+                        <!--android:entries="@xml/gender" />-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_arrow_drop_down_black_24dp" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp">-->
+
+                    <!--<Spinner-->
+                        <!--android:id="@+id/spnCountry"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="?attr/actionBarSize"-->
+                        <!--android:background="@drawable/button_bg"-->
+                        <!--android:entries="@xml/gender" />-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_arrow_drop_down_black_24dp" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp">-->
+
+                    <!--<Spinner-->
+                        <!--android:id="@+id/spnHintQuestion"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="?attr/actionBarSize"-->
+                        <!--android:background="@drawable/button_bg" />-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_arrow_drop_down_black_24dp" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<com.fst.customViews.EditTextRegularCalibri-->
+                    <!--android:id="@+id/edtHintAnswer"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/edit_text_bg"-->
+                    <!--android:gravity="center|left"-->
+                    <!--android:hint="Answer"-->
+                    <!--android:inputType="text"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:padding="15dp"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textColorHint="@color/white"-->
+                    <!--android:textSize="20sp" />-->
+
+
+                <LinearLayout
+                    android:id="@+id/lnrTnc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chkTerms"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:layout_height="wrap_content" />
+
+                    <com.fst.customViews.TextViewCalibriBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/active_points"
+                        android:text="@string/reg_terms_condition"/>
+
+                </LinearLayout>
+
+
+                <com.fst.customViews.TextViewCalibriBold
+                    android:id="@+id/txtSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg"
+                    android:gravity="center"
+                    android:text="Sign up"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="horizontal">
+
+                    <com.fst.customViews.TextViewCalibriBold
+                        android:id="@+id/txtSignIn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Sign in"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <io.saeid.fabloading.LoadingView
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:visibility="gone"
+        app:mfl_duration="500"
+        app:mfl_onclickLoading="false"
+        app:mfl_repeat="1000" />
+
+</RelativeLayout>

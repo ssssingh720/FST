@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/txtBidDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:autoSizeMaxTextSize="18sp"
+        android:autoSizeMinTextSize="14sp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:text="2018-10-23 13:01:34"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/trans" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/txtBidId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:autoSizeMaxTextSize="18sp"
+        android:autoSizeMinTextSize="14sp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:text="BID ID"
+        android:textColor="@color/active_points"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/trans" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/txtBidEvents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:autoSizeMaxTextSize="18sp"
+        android:autoSizeMinTextSize="14sp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:text="EVENTS"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/trans" />
+
+    <!--<me.grantland.widget.AutofitTextView-->
+        <!--android:id="@+id/txtBidCategory"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="20"-->
+        <!--android:autoSizeMaxTextSize="18sp"-->
+        <!--android:autoSizeMinTextSize="14sp"-->
+        <!--android:gravity="center"-->
+        <!--android:maxLines="1"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="CATEGORY"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<View-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@drawable/trans" />-->
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/txtBidChoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:autoSizeMaxTextSize="18sp"
+        android:autoSizeMinTextSize="14sp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:text="CHOICE"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/trans" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/txtBidPoints"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:autoSizeMaxTextSize="18sp"
+        android:autoSizeMinTextSize="14sp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:text="BID POINTS"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/trans" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/txtWinPoints"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:visibility="gone"
+        android:autoSizeMaxTextSize="18sp"
+        android:autoSizeMinTextSize="14sp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+</TableRow>
+
+    <!--</TableLayout>-->
+
+    <!--</LinearLayout>-->

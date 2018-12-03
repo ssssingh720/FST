@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <com.fst.customViews.TextViewCalibriBold
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:gravity="center|left"
+                android:text="EVENT"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <com.fst.customViews.TextViewCalibriBold
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <com.fst.customViews.TextViewCalibriBold
+                android:id="@+id/txtEventSelected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center|left"
+                android:text="DIAMOND"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <com.fst.customViews.TextViewCalibriBold
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:gravity="center|left"
+                android:text="CATEGORY"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <com.fst.customViews.TextViewCalibriBold
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <com.fst.customViews.TextViewCalibriBold
+                android:id="@+id/txtPopBidCat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center|left"
+                android:text="DIAMOND"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="10">
+
+            <com.fst.customViews.TextViewCalibriBold
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:gravity="center|left"
+                android:text="CHOICE"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <com.fst.customViews.TextViewCalibriBold
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <com.fst.customViews.TextViewCalibriBold
+                android:id="@+id/txtPopChoice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center|left"
+                android:text="CHOICE"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <com.fst.customViews.TextViewCalibriBold
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:gravity="center|left"
+                android:text="POINT"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <com.fst.customViews.TextViewCalibriBold
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <com.fst.customViews.TextViewCalibriBold
+                android:id="@+id/txtPopPoints"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center|left"
+                android:text="50"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <com.fst.customViews.TextViewCalibriBold
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_submit"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@drawable/black_text_selector"
+            android:textSize="25sp" />
+
+        <com.fst.customViews.TextViewCalibriBold
+            android:id="@+id/btnSubmitBid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_submit"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Submit Bid"
+            android:textAllCaps="false"
+            android:textColor="@drawable/black_text_selector"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

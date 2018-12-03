@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnrBid"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:clickable="true"
+    android:layout_marginLeft="10dp"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgBidSelect"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bid_btn_unchoosen"
+        android:gravity="center"
+        android:text="SELECT"
+        android:textColor="@color/white" />
+
+    <com.fst.customViews.TextViewCalibriBold
+        android:id="@+id/txtBidName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="DIAMOND"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

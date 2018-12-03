@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnrEvent"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:background="@drawable/event_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.fst.customViews.TextViewCalibriBold
+        android:id="@+id/txtEventTime"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:text="18:00:00"
+        android:textColor="#383023"
+        android:textSize="24sp" />
+
+    <com.fst.customViews.TextViewCalibriBold
+        android:id="@+id/txtEventSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/event_btn_unchoosen"
+        android:gravity="center"
+        android:text="SELECT"
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+
+    <com.fst.customViews.TextViewCalibriBold
+        android:id="@+id/txtEventName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="DIAMOND"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+</LinearLayout>
